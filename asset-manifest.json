@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/fractal-web-test/static/css/main.b9b3082a.css",
+    "main.js": "/fractal-web-test/static/js/main.efb53656.js",
+    "static/media/TTTravels-Regular.woff": "/fractal-web-test/static/media/TTTravels-Regular.2edbafbb38c30d0b78da.woff",
+    "static/media/TTTravels-Medium.woff": "/fractal-web-test/static/media/TTTravels-Medium.28cf6f41b5a4af5f4043.woff",
+    "static/media/TTTravels-Bold.woff": "/fractal-web-test/static/media/TTTravels-Bold.a82c7e57e34e2e1dd398.woff",
+    "static/media/photo.jpeg": "/fractal-web-test/static/media/photo.754f0b3077abe5a3e629.jpeg",
+    "static/media/Folder.svg": "/fractal-web-test/static/media/Folder.98c0dbfd456042f9424b.svg",
+    "index.html": "/fractal-web-test/index.html",
+    "main.b9b3082a.css.map": "/fractal-web-test/static/css/main.b9b3082a.css.map",
+    "main.efb53656.js.map": "/fractal-web-test/static/js/main.efb53656.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9b3082a.css",
+    "static/js/main.efb53656.js"
+  ]
+}
