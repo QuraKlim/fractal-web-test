@@ -10,7 +10,7 @@ export enum ESex {
 export interface IUserInfo {
   nickname: string;
   name: string;
-  sername: string;
+  surname: string;
   phone: string;
   email: string;
   sex: ESex;
@@ -37,7 +37,7 @@ export const initialState: IInitialState = {
   data: {
     nickname: "",
     name: "",
-    sername: "",
+    surname: "",
     phone: "+7",
     email: "",
     sex: ESex.MAN,

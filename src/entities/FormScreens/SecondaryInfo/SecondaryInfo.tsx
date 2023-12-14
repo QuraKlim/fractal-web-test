@@ -79,7 +79,7 @@ export const SecondaryInfo = ({
                     <div className={cls.advantage_wrap} key={index}>
                       <Input
                         style={{ marginTop: "0" }}
-                        id={`field-advatages-${index + 1}`}
+                        id={`field-advantages-${index + 1}`}
                         name={`advantages.${index}`}
                         error={errors.advantages?.[index]}
                         //@ts-ignore

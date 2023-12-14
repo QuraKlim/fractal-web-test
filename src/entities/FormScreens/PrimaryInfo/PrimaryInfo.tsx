@@ -20,7 +20,7 @@ export const PrimaryInfo = ({ onClickNext, onClickPrev }: PrimryInfoProps) => {
   type Values = {
     nickname: string;
     name: string;
-    sername: string;
+    surname: string;
     sex: ESex | "";
   };
 
@@ -35,7 +35,7 @@ export const PrimaryInfo = ({ onClickNext, onClickPrev }: PrimryInfoProps) => {
       .min(2, "Слишком короткое имя")
       .matches(/^[a-zA-Zа-яА-Я]+$/, "Может содрежать только буквы")
       .required("Обязательно для заполнения"),
-    sername: Yup.string()
+    surname: Yup.string()
       .max(50, "Слишком длинное имя")
       .min(2, "Слишком короткое имя")
       .matches(/^[a-zA-Zа-яА-Я]+$/, "Может содрежать только буквы")
@@ -44,7 +44,7 @@ export const PrimaryInfo = ({ onClickNext, onClickPrev }: PrimryInfoProps) => {
 
   const dispatch = useDispatch();
 
-  const { nickname, name, sername, sex } = useTypedSelector(
+  const { nickname, name, surname, sex } = useTypedSelector(
     (store) => store.form.data
   );
   return (
@@ -54,7 +54,7 @@ export const PrimaryInfo = ({ onClickNext, onClickPrev }: PrimryInfoProps) => {
         initialValues={{
           nickname,
           name,
-          sername,
+          surname,
           sex,
         }}
         onSubmit={(values: Values) => {
@@ -80,10 +80,10 @@ export const PrimaryInfo = ({ onClickNext, onClickPrev }: PrimryInfoProps) => {
             />
             <Input
               labelText="Фамилия"
-              id="field-sername"
-              name="sername"
-              error={errors.sername}
-              touched={touched.sername}
+              id="field-surname"
+              name="surname"
+              error={errors.surname}
+              touched={touched.surname}
             />
             <Input
               labelText="Пол"
