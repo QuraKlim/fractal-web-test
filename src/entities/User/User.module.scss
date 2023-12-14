@@ -1,0 +1,52 @@
+.user {
+  &_wrapper {
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+  &_photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  &_links {
+    display: flex;
+    gap: 20px;
+  }
+  &_link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    &::before {
+      content: url("/shared/assets/icons/Folder.svg");
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .user {
+    &_wrapper {
+      flex-direction: column;
+      justify-content: center;
+      .name {
+        text-align: center;
+      }
+    }
+    &_link {
+      &::before {
+        margin-top: -2px;
+      }
+    }
+    &_links {
+      margin-top: 10px;
+    }
+  }
+}

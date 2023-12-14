@@ -1,0 +1,57 @@
+@import "variables/global";
+@import "fonts/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: var(--regular-font-size);
+  font-family: "TT Travels", sans-serif;
+}
+
+.App {
+  font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  padding-top: 24px;
+}
+
+.form-frame {
+  background-color: var(--frame-bg-color);
+  padding: 25px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.header {
+  font-size: var(--header-font-size);
+  font-weight: 700;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .form-frame {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-frame {
+    width: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .form-frame {
+    width: 100%;
+  }
+}

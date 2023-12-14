@@ -1,0 +1,65 @@
+.progress_bar {
+  width: 100%;
+  position: relative;
+}
+
+.ciricle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  &_inner {
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 100%;
+  }
+  &_empty {
+    width: 16px;
+    height: 16px;
+    background-color: #666666;
+    border-radius: 100%;
+  }
+}
+
+.checks_wrap {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.progress_line {
+  height: 50%;
+  background-color: var(--secondary-color);
+  position: relative;
+  z-index: 0;
+  transition: width 0.5s ease-in-out;
+  &_wrap {
+    padding: 0 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  &_empty {
+    background-color: #6666661c;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.bar_number {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #666666;
+}

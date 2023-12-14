@@ -1,0 +1,23 @@
+.status {
+  &_outer_icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  &_inner_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+  }
+}

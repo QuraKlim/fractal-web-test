@@ -1,0 +1,27 @@
+.error_message {
+  color: red;
+}
+
+.input {
+  padding: 12px;
+  line-height: 100%;
+  border-radius: 4px;
+  outline: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.16);
+  &:focus {
+    box-shadow: 0px 0px 0px 2px var(--secondary-color);
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: var(--input-width);
+    margin-top: 24px;
+    label {
+      margin-bottom: 12px;
+    }
+  }
+  &s_wrapper {
+    padding: 14px 0;
+  }
+}

@@ -1,0 +1,32 @@
+.inputs_wrapper {
+  padding: 14px 0;
+}
+
+.button_group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.advantage_wrap {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.trash_icon {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.plus_icon {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.counter {
+  margin-top: 5px;
+}

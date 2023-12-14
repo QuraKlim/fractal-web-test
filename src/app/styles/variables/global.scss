@@ -1,0 +1,29 @@
+:root {
+  --bg-color: #f4f4f5;
+  --frame-bg-color: #fff;
+  --header-font-size: 20px;
+  --regular-font-size: 14px;
+  --input-width: 400px;
+  --secondary-color: #5558fa;
+}
+
+@media (max-width: 1024px) {
+  .form-frame {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --input-width: 100%;
+    --header-font-size: 16px;
+    --regular-font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .form-frame {
+    --header-font-size: 14px;
+    --regular-font-size: 10px;
+  }
+}

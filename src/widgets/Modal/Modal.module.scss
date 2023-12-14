@@ -1,0 +1,43 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  &_window {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_wrap {
+    position: relative;
+    z-index: 12;
+    padding: 32px;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 12px;
+  }
+  &_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.596);
+  }
+}
+
+@media (max-width: 425px) {
+  .modal {
+    &_wrap {
+      min-width: unset;
+    }
+  }
+}
